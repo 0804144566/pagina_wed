@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juris & Lex | Estudio Jurídico</title>
+    <!--El título que aparece en la pestaña del navegador -->
+    <title> | Estudio_Juridico_Angela_Loor</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,69 +17,49 @@
             font-family: 'Inter', sans-serif;
             background-color: #f8fafc;
         }
+        /* Imagen 1  */
         .hero-section {
-            background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('https://placehold.co/1920x1080/334155/FFFFFF?text=Edificio+Moderno');
+            background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('img/portada.png');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
         }
-        .cta-button {
-            transition: all 0.3s ease;
-        }
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
-        [data-lucide] {
-            width: 24px;
-            height: 24px;
-        }
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .cta-button { transition: all 0.3s ease; }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        [data-lucide] { width: 24px; height: 24px; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
     </style>
 </head>
 <body class="text-gray-700">
 
-    <!-- =========== Header =========== -->
-    <header id="header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+    <header id="header" class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <a href="#" class="text-2xl font-bold text-gray-800 flex items-center">
                     <i data-lucide="scale" class="text-amber-600 mr-2"></i>
-                    Juris & Lex
-                </a>
                 
-                <nav class="hidden md:flex items-center space-x-6">
-                    <a href="#inicio" class="text-gray-600 hover:text-amber-600 transition">Inicio</a>
-                    <a href="#areas" class="text-gray-600 hover:text-amber-600 transition">Áreas de Práctica</a>
-                    <a href="#nosotros" class="text-gray-600 hover:text-amber-600 transition">Sobre Nosotros</a>
-                    <a href="#equipo" class="text-gray-600 hover:text-amber-600 transition">Equipo</a>
-                    <a href="#contacto" class="text-gray-600 hover:text-amber-600 transition">Contacto</a>
-                </nav>
-
-                <a href="#contacto" class="hidden md:inline-block bg-amber-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-amber-700 cta-button">
-                    Consulta Gratuita
+                    AL & SZ
                 </a>
-
-                <button id="mobile-menu-button" class="md:hidden">
-                    <i data-lucide="menu"></i>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="#inicio" class="text-gray-600 hover:text-amber-600">Inicio</a>
+                    <a href="#areas" class="text-gray-600 hover:text-amber-600">Áreas de Práctica</a>
+                    <a href="#nosotros" class="text-gray-600 hover:text-amber-600">Sobre Nosotros</a>
+                    <a href="#equipo" class="text-gray-600 hover:text-amber-600">Equipo</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-amber-600">Contacto</a>
+                </nav>
+                <a href="#contacto" class="hidden md:inline-block bg-amber-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-amber-700 cta-button">Consulta Gratuita</a>
+                <button id="mobile-menu-button" class="md:hidden"><i data-lucide="menu"></i>
                 </button>
             </div>
         </div>
-
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <a href="#inicio" class="block py-3 px-6 text-gray-600 hover:bg-gray-50 hover:text-amber-600">Inicio</a>
             <a href="#areas" class="block py-3 px-6 text-gray-600 hover:bg-gray-50 hover:text-amber-600">Áreas de Práctica</a>
             <a href="#nosotros" class="block py-3 px-6 text-gray-600 hover:bg-gray-50 hover:text-amber-600">Sobre Nosotros</a>
             <a href="#equipo" class="block py-3 px-6 text-gray-600 hover:bg-gray-50 hover:text-amber-600">Equipo</a>
             <a href="#contacto" class="block py-3 px-6 text-gray-600 hover:bg-gray-50 hover:text-amber-600">Contacto</a>
-             <div class="p-4">
+            <div class="p-4">
                 <a href="#contacto" class="w-full text-center block bg-amber-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-amber-700 cta-button">
                     Consulta Gratuita
                 </a>
@@ -87,7 +68,6 @@
     </header>
 
     <main>
-        <!-- =========== Hero Section =========== -->
         <section id="inicio" class="hero-section text-white py-20 md:py-32">
             <div class="container mx-auto px-6 text-center">
                 <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Defendiendo sus Derechos con Excelencia y Compromiso</h1>
@@ -98,8 +78,6 @@
                 </a>
             </div>
         </section>
-
-        <!-- =========== Áreas de Práctica =========== -->
         <section id="areas" class="py-20">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12 reveal">
@@ -107,35 +85,80 @@
                     <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Nos especializamos en una amplia gama de disciplinas legales para ofrecerle un soporte integral.</p>
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 reveal"><div class="flex items-center justify-center bg-amber-100 rounded-full w-16 h-16 mb-6"><i data-lucide="briefcase" class="text-amber-600"></i></div><h3 class="text-xl font-bold text-gray-800 mb-3">Derecho Corporativo</h3><p class="text-gray-600">Asesoramiento en constitución de empresas, fusiones, adquisiciones y contratos comerciales para proteger sus intereses.</p></div>
-                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 reveal"><div class="flex items-center justify-center bg-amber-100 rounded-full w-16 h-16 mb-6"><i data-lucide="users" class="text-amber-600"></i></div><h3 class="text-xl font-bold text-gray-800 mb-3">Derecho de Familia</h3><p class="text-gray-600">Manejamos casos de divorcio, custodia, pensiones alimenticias y herencias con sensibilidad y profesionalismo.</p></div>
-                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 reveal"><div class="flex items-center justify-center bg-amber-100 rounded-full w-16 h-16 mb-6"><i data-lucide="shield" class="text-amber-600"></i></div><h3 class="text-xl font-bold text-gray-800 mb-3">Derecho Penal</h3><p class="text-gray-600">Defensa experta en todas las etapas del proceso penal, garantizando la protección de sus derechos fundamentales.</p></div>
-                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 reveal"><div class="flex items-center justify-center bg-amber-100 rounded-full w-16 h-16 mb-6"><i data-lucide="landmark" class="text-amber-600"></i></div><h3 class="text-xl font-bold text-gray-800 mb-3">Derecho Inmobiliario</h3><p class="text-gray-600">Asesoría en compraventa, arrendamientos, y litigios sobre propiedades, asegurando transacciones seguras.</p></div>
-                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 reveal"><div class="flex items-center justify-center bg-amber-100 rounded-full w-16 h-16 mb-6"><i data-lucide="file-text" class="text-amber-600"></i></div><h3 class="text-xl font-bold text-gray-800 mb-3">Derecho Laboral</h3><p class="text-gray-600">Representamos tanto a empleadores como a empleados en disputas laborales, despidos y negociaciones.</p></div>
-                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 reveal"><div class="flex items-center justify-center bg-amber-100 rounded-full w-16 h-16 mb-6"><i data-lucide="gavel" class="text-amber-600"></i></div><h3 class="text-xl font-bold text-gray-800 mb-3">Litigios y Arbitraje</h3><p class="text-gray-600">Resolución de conflictos a través de la vía judicial o métodos alternativos con estrategias sólidas y efectivas.</p></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- =========== Sobre Nosotros =========== -->
-        <section id="nosotros" class="bg-white py-20">
-            <div class="container mx-auto px-6">
-                <div class="flex flex-col md:flex-row items-center gap-12">
-                    <div class="md:w-1/2 reveal"><img src="https://placehold.co/600x400/e2e8f0/334155?text=Nuestro+Despacho" alt="Oficina del estudio jurídico" class="rounded-lg shadow-xl"></div>
-                    <div class="md:w-1/2 reveal">
-                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Trayectoria y Confianza</h2>
-                        <p class="text-gray-600 mb-6">Fundado en 2003, Juris & Lex nació con la misión de ofrecer servicios legales de la más alta calidad, basados en la ética, la integridad y un profundo conocimiento del derecho. Nos enorgullecemos de construir relaciones a largo plazo con nuestros clientes, basadas en la confianza mutua y en resultados exitosos.</p>
-                        <div class="space-y-4">
-                            <div class="flex items-start"><div class="flex-shrink-0"><i data-lucide="check-circle-2" class="text-green-500 mt-1"></i></div><p class="ml-3 text-gray-600"><span class="font-semibold text-gray-800">Atención Personalizada:</span> Cada caso es único y lo tratamos con la dedicación que merece.</p></div>
-                            <div class="flex items-start"><div class="flex-shrink-0"><i data-lucide="check-circle-2" class="text-green-500 mt-1"></i></div><p class="ml-3 text-gray-600"><span class="font-semibold text-gray-800">Estrategias Innovadoras:</span> Combinamos la tradición legal con enfoques modernos para obtener los mejores resultados.</p></div>
-                            <div class="flex items-start"><div class="flex-shrink-0"><i data-lucide="check-circle-2" class="text-green-500 mt-1"></i></div><p class="ml-3 text-gray-600"><span class="font-semibold text-gray-800">Máxima Confidencialidad:</span> Su privacidad y la seguridad de su información son nuestra máxima garantía.</p></div>
+                    <!-- ... Tarjetas de Áreas de Práctica ... -->
+                    <!-- Tarjeta de Área 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 reveal">
+                        <div class="flex items-center justify-center bg-amber-100 rounded-full w-16 h-16 mb-6">
+                            <i data-lucide="briefcase" class="text-amber-600"></i>
                         </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derecho Corporativo</h3>
+                        <p class="text-gray-600">Asesoramiento en constitución de empresas, fusiones, adquisiciones y contratos comerciales para proteger sus intereses.</p>
+                    </div>
+
+                    <!-- Tarjeta de Área 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 reveal">
+                        <div class="flex items-center justify-center bg-amber-100 rounded-full w-16 h-16 mb-6">
+                            <i data-lucide="users" class="text-amber-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derecho de Familia</h3>
+                        <p class="text-gray-600">Manejamos casos de divorcio, custodia, pensiones alimenticias y herencias con sensibilidad y profesionalismo.</p>
+                    </div>
+
+                    <!-- Tarjeta de Área 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 reveal">
+                        <div class="flex items-center justify-center bg-amber-100 rounded-full w-16 h-16 mb-6">
+                            <i data-lucide="shield" class="text-amber-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derecho Penal</h3>
+                        <p class="text-gray-600">Defensa experta en todas las etapas del proceso penal, garantizando la protección de sus derechos fundamentales.</p>
+                    </div>
+
+                    <!-- Tarjeta de Área 4 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 reveal">
+                        <div class="flex items-center justify-center bg-amber-100 rounded-full w-16 h-16 mb-6">
+                            <i data-lucide="landmark" class="text-amber-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derecho Inmobiliario</h3>
+                        <p class="text-gray-600">Asesoría en compraventa, arrendamientos, y litigios sobre propiedades, asegurando transacciones seguras.</p>
+                    </div>
+
+                    <!-- Tarjeta de Área 5 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 reveal">
+                        <div class="flex items-center justify-center bg-amber-100 rounded-full w-16 h-16 mb-6">
+                            <i data-lucide="file-text" class="text-amber-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derecho Laboral</h3>
+                        <p class="text-gray-600">Representamos tanto a empleadores como a empleados en disputas laborales, despidos y negociaciones.</p>
+                    </div>
+
+                    <!-- Tarjeta de Área 6 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 reveal">
+                        <div class="flex items-center justify-center bg-amber-100 rounded-full w-16 h-16 mb-6">
+                            <i data-lucide="gavel" class="text-amber-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Litigios y Arbitraje</h3>
+                        <p class="text-gray-600">Resolución de conflictos a través de la vía judicial o métodos alternativos con estrategias sólidas y efectivas.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- =========== Equipo =========== -->
+        <section id="nosotros" class="bg-white py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2 reveal">
+                        <!-- Imagen de tu oficina.-->
+
+                        <img src="img/logo AL&SZ Estudio.png" alt="Oficina del estudio jurídico" class="rounded-lg shadow-xl">
+                    </div>
+                    <div class="md:w-1/2 reveal">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Más de 20 Años de Trayectoria y Confianza</h2>
+                        <p class="text-gray-600 mb-6">Fundado en 2022, nuestro estudio nació con la misión de ofrecer servicios legales de la más alta calidad, basados en la ética, la integridad y un profundo conocimiento del derecho.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="equipo" class="py-20">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12 reveal">
@@ -143,17 +166,25 @@
                     <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Profesionales apasionados por el derecho, listos para representarlo.</p>
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-lg shadow-lg text-center p-8 reveal"><img src="https://placehold.co/200x200/64748b/FFFFFF?text=L.M." alt="Foto de Laura Morales" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-amber-200"><h3 class="text-xl font-bold text-gray-800">Laura Morales</h3><p class="text-amber-600 font-semibold mb-2">Socia Fundadora</p><p class="text-gray-600 text-sm">Especialista en Derecho Corporativo y Fusiones. Más de 25 años de experiencia.</p></div>
-                    <div class="bg-white rounded-lg shadow-lg text-center p-8 reveal"><img src="https://placehold.co/200x200/64748b/FFFFFF?text=C.V." alt="Foto de Carlos Vega" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-amber-200"><h3 class="text-xl font-bold text-gray-800">Carlos Vega</h3><p class="text-amber-600 font-semibold mb-2">Socio Senior</p><p class="text-gray-600 text-sm">Experto en Litigios Complejos y Derecho Penal. Reconocido por su tenacidad en tribunales.</p></div>
-                    <div class="bg-white rounded-lg shadow-lg text-center p-8 reveal"><img src="https://placehold.co/200x200/64748b/FFFFFF?text=A.R." alt="Foto de Ana Rivas" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-amber-200"><h3 class="text-xl font-bold text-gray-800">Ana Rivas</h3><p class="text-amber-600 font-semibold mb-2">Abogada Asociada</p><p class="text-gray-600 text-sm">Enfocada en Derecho de Familia e Inmobiliario, con una alta tasa de acuerdos favorables.</p></div>
+                    <div class="bg-white rounded-lg shadow-lg text-center p-8 reveal">
+                        <!-- Foto de abogado 1-->
+                        <img src="img/foto.png" alt="Foto de abogado" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-amber-200">
+                        <h3 class="text-xl font-bold text-gray-800">Abogada Angela Margarita Loor Vera</h3>
+                        <p class="text-amber-600 font-semibold mb-2">Socio Fundador</p>
+                    </div>
+                    <!-- Tarjeta de Abogado 2  -->
+                    <div class="bg-white rounded-lg shadow-lg text-center p-8 reveal">
+                        <img src="https://placehold.co/200x200/64748b/FFFFFF?text=Abogada+2" alt="Foto de abogada" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-amber-200">
+                        <h3 class="text-xl font-bold text-gray-800">Ana Rivas</h3>
+                        <p class="text-amber-600 font-semibold mb-2">Abogada Asociada</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- =========== Contacto =========== -->
         <section id="contacto" class="bg-gray-800 py-20 text-white">
             <div class="container mx-auto px-6">
-                 <div class="text-center mb-12 reveal">
+                <div class="text-center mb-12 reveal">
                     <h2 class="text-3xl md:text-4xl font-bold">Póngase en Contacto</h2>
                     <p class="text-gray-300 mt-2 max-w-2xl mx-auto">Permítanos evaluar su caso. La primera consulta es sin costo.</p>
                 </div>
@@ -161,68 +192,162 @@
                     <div class="md:w-1/3 bg-amber-600 p-8 text-white">
                         <h3 class="text-2xl font-bold mb-6">Información de Contacto</h3>
                         <div class="space-y-6">
-                            <div class="flex items-start"><i data-lucide="map-pin" class="mt-1 mr-4 flex-shrink-0"></i><div><h4 class="font-semibold">Nuestra Oficina</h4><p class="text-amber-100">Av. Principal 123, Piso 10<br>Ciudad Capital, País</p></div></div>
-                            <div class="flex items-start"><i data-lucide="mail" class="mt-1 mr-4 flex-shrink-0"></i><div><h4 class="font-semibold">Email</h4><a href="mailto:contacto@jurislex.com" class="text-amber-100 hover:underline">contacto@jurislex.com</a></div></div>
-                            <div class="flex items-start"><i data-lucide="phone" class="mt-1 mr-4 flex-shrink-0"></i><div><h4 class="font-semibold">Teléfono</h4><a href="tel:+123456789" class="text-amber-100 hover:underline">+1 (23) 456-789</a></div></div>
-                            <div class="flex items-start"><i data-lucide="clock" class="mt-1 mr-4 flex-shrink-0"></i><div><h4 class="font-semibold">Horario de Atención</h4><p class="text-amber-100">Lunes - Viernes<br>9:00 AM - 6:00 PM</p></div></div>
+                            <!-- Ubicación -->
+                            <div class="flex items-start">
+                                <i data-lucide="map-pin" class="mt-1 mr-4 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold">Nuestra Oficina</h4>
+                                    <p class="text-amber-100">Av. Principal 123, Piso 10<br>Manta, Ecuador</p>
+                                </div>
+                            </div>
+                            <!-- Email -->
+                            <div class="flex items-start">
+                                <i data-lucide="mail" class="mt-1 mr-4 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <a href="mailto:contacto@tu-estudio.com" class="text-amber-100 hover:underline">contacto@tu-estudio.com</a>
+                                </div>
+                            </div>
+                            <!-- WhatsApp -->
+                            <div class="flex items-start">
+                                <svg class="mt-1 mr-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path><path d="M14.05 6.02a9 9 0 0 1 0 11.9_ M16.83 3.24a13 13 0 0 1 0 17.52"></path></svg>
+                                <div>
+                                    <h4 class="font-semibold">WhatsApp</h4>
+                                    <a href="https://wa.me/593123456789" target="_blank" class="text-amber-100 hover:underline">+593 12 345 6789</a>
+                                </div>
+                            </div>
+                            <!-- Horario -->
+                            <div class="flex items-start">
+                                <i data-lucide="clock" class="mt-1 mr-4 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold">Horario de Atención</h4>
+                                    <p class="text-amber-100">Lunes - Viernes<br>9:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="md:w-2/3 p-8 text-gray-800">
                         <h3 class="text-2xl font-bold mb-6">Envíenos un Mensaje</h3>
                         <form id="contact-form">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                                <div><label for="nombre" class="block text-sm font-medium text-gray-600 mb-1">Nombre Completo</label><input type="text" id="nombre" name="nombre" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" required></div>
-                                <div><label for="email" class="block text-sm font-medium text-gray-600 mb-1">Correo Electrónico</label><input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" required></div>
+                                <div>
+                                    <label for="nombre" class="block text-sm font-medium text-gray-600 mb-1">Nombre Completo</label>
+                                    <input type="text" id="nombre" name="nombre" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-600 mb-1">Correo Electrónico</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" required>
+                                </div>
                             </div>
-                            <div class="mb-6"><label for="asunto" class="block text-sm font-medium text-gray-600 mb-1">Asunto</label><input type="text" id="asunto" name="asunto" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" required></div>
-                            <div class="mb-6"><label for="mensaje" class="block text-sm font-medium text-gray-600 mb-1">Mensaje</label><textarea id="mensaje" name="mensaje" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" required></textarea></div>
-                            <div><button type="submit" class="w-full bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 cta-button">Enviar Mensaje</button></div>
+                            <div class="mb-6">
+                                <label for="asunto" class="block text-sm font-medium text-gray-600 mb-1">Asunto</label>
+                                <input type="text" id="asunto" name="asunto" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="mensaje" class="block text-sm font-medium text-gray-600 mb-1">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 cta-button">
+                                    Enviar Mensaje
+                                </button>
+                            </div>
                         </form>
-                        <!-- Contenedor para mensajes de estado -->
-                        <div id="form-status" class="mt-4 text-center p-3 rounded-lg text-white hidden"></div>
+                        <div id="form-status" class="mt-4 text-center font-medium"></div>
                     </div>
                 </div>
+                                <!-- INICIO: SECCIÓN DEL MAPA -->
+                <div class="mt-12 rounded-lg overflow-hidden shadow-xl reveal">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.32111553531!2d-80.75842284156497!3d-0.957591605333555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90295988e0e47081%3A0x6a4f9e1f5f2c417e!2sManta!5e0!3m2!1sen!2sec!4v1678886400000!5m2!1sen!2sec" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <!-- FIN: SECCIÓN DEL MAPA -->
             </div>
         </section>
     </main>
-
-    <!-- =========== Footer =========== -->
     <footer class="bg-gray-900 text-gray-400">
         <div class="container mx-auto px-6 py-10">
             <div class="grid md:grid-cols-3 gap-8">
-                <div><h3 class="text-xl font-bold text-white mb-4">Juris & Lex</h3><p class="text-sm">Comprometidos con la justicia y la defensa de sus intereses. Asesoría legal confiable y efectiva.</p></div>
-                <div><h3 class="text-lg font-semibold text-white mb-4">Enlaces Rápidos</h3><ul class="space-y-2 text-sm"><li><a href="#areas" class="hover:text-amber-500 transition">Áreas de Práctica</a></li><li><a href="#nosotros" class="hover:text-amber-500 transition">Sobre Nosotros</a></li><li><a href="#equipo" class="hover:text-amber-500 transition">Equipo</a></li><li><a href="#" class="hover:text-amber-500 transition">Política de Privacidad</a></li></ul></div>
-                <div><h3 class="text-lg font-semibold text-white mb-4">Síganos</h3><div class="flex space-x-4"><a href="#" class="hover:text-white"><i data-lucide="linkedin"></i></a><a href="#" class="hover:text-white"><i data-lucide="twitter"></i></a><a href="#" class="hover:text-white"><i data-lucide="facebook"></i></a></div></div>
+                <div>
+                    <!--Nombre de tu estudio en el footer -->
+                    <h3 class="text-xl font-bold text-white mb-4"> AL & SZ </h3>
+                    <p class="text-sm">Comprometidos con la justicia y la defensa de sus intereses. Asesoría legal confiable y efectiva.</p>
+                </div>
+                <!-- Columna 2: Enlaces Rápidos -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#areas" class="hover:text-amber-500 transition">Áreas de Práctica</a></li>
+                        <li><a href="#nosotros" class="hover:text-amber-500 transition">Sobre Nosotros</a></li>
+                        <li><a href="#equipo" class="hover:text-amber-500 transition">Equipo</a></li>
+                        <li><a href="#contacto" class="hover:text-amber-500 transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Columna 3: Redes Sociales -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Síganos</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="hover:text-white" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="#" class="hover:text-white" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                        </a>
+                        <a href="#" class="hover:text-white" aria-label="Facebook">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-sm"><p>&copy; 2025 Juris & Lex. Todos los derechos reservados.</p></div>
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-sm">
+                <!-- Nombre del estudio en el copyright -->
+                <p>&copy; 2025 AL & SZ . Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 
     <script>
         lucide.createIcons();
+
+        // Lógica del menú móvil
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); }); });
-        const revealElements = document.querySelectorAll('.reveal');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } });
-        }, { threshold: 0.1 });
-        revealElements.forEach(element => { observer.observe(element); });
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
 
-        // --- INICIO: Lógica para el envío del formulario de contacto ---
-        const contactForm = document.getElementById('contact-form');
+        // Animación de aparición al hacer scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Lógica del formulario de contacto
+        const form = document.getElementById('contact-form');
         const formStatus = document.getElementById('form-status');
 
-        contactForm.addEventListener('submit', async (e) => {
-            e.preventDefault(); // Evita que la página se recargue
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            formStatus.textContent = 'Enviando...';
+            formStatus.className = 'mt-4 text-center font-medium text-blue-600';
 
             const formData = {
-                nombre: contactForm.nombre.value,
-                email: contactForm.email.value,
-                asunto: contactForm.asunto.value,
-                mensaje: contactForm.mensaje.value,
+                nombre: form.nombre.value,
+                email: form.email.value,
+                asunto: form.asunto.value,
+                mensaje: form.mensaje.value,
             };
 
             try {
@@ -232,29 +357,19 @@
                     body: JSON.stringify(formData),
                 });
 
-                const result = await response.json();
-
                 if (response.ok) {
                     formStatus.textContent = '¡Gracias! Su mensaje ha sido enviado con éxito.';
-                    formStatus.className = 'mt-4 text-center p-3 rounded-lg text-white bg-green-600';
-                    formStatus.classList.remove('hidden');
-                    contactForm.reset(); 
+                    formStatus.className = 'mt-4 text-center font-medium text-green-600';
+                    form.reset();
                 } else {
-                    throw new Error(result.message);
+                    throw new Error('Error en la respuesta del servidor');
                 }
-
             } catch (error) {
-                formStatus.textContent = 'Hubo un error al enviar su mensaje. Por favor, inténtelo de nuevo más tarde.';
-                formStatus.className = 'mt-4 text-center p-3 rounded-lg text-white bg-red-600';
-                formStatus.classList.remove('hidden');
+                formStatus.textContent = 'Hubo un error al enviar el mensaje. Inténtelo de nuevo.';
+                formStatus.className = 'mt-4 text-center font-medium text-red-600';
+                console.error('Error al enviar formulario:', error);
             }
-
-            setTimeout(() => {
-                formStatus.classList.add('hidden');
-            }, 5000);
         });
-        // --- FIN: Lógica para el envío del formulario de contacto ---
     </script>
-
 </body>
 </html>
